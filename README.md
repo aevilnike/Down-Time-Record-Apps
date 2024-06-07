@@ -39,7 +39,7 @@ The Downtime App helps technicians easily report production issues. It provides 
     <tr>
       <td align="center"><b>Data Record</b></td>
       <td align="center"><b>Data View</b></td>
-      <td align="center"><b>Search Filter in Action</b></td>
+      <td align="center"><b>Search Filter</b></td>
     </tr>
     <tr>
       <td align="center"><img src="https://github.com/aevilnike/Down-Time-Record-Apps/assets/171907883/c02df265-c1f5-4756-892e-30fed960ed30" alt="Admin Notification Screen" width="200" height="400"></td>
