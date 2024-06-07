@@ -4,7 +4,7 @@
 
 <br>
 
-The Downtime App helps technicians easily report production issues. It provides forms to fill out and lets users upload pictures as proof, which are stored in a database. When a problem is reported, the admin gets notified. On the admin side, there are management functions and graphs showing which issues are reported most often and the types of problems. This app makes it simple to track issues and helps managers make better decisions.
+The Downtime App helps technicians easily report production issues. It provides forms to fill out and lets users upload pictures as proof, which are stored in a database. When a problem is reported, the admin gets notified. On the admin side, there are management functions and graphs showing which issues are reported most often and the types of problems.
 
 <hr/>
 
@@ -29,7 +29,7 @@ The Downtime App helps technicians easily report production issues. It provides 
     <tr>
       <td align="center"><b>Login Screen</b></td>
       <td align="center"><b>Issue Reporting Form</b></td>
-      <td align="center"><b>Main Dashboard with Graphs</b></td>
+      <td align="center"><b>Admin Dashboard with Graphs</b></td>
     </tr>
     <tr>
       <td align="center"><img src="https://github.com/aevilnike/Down-Time-Record-Apps/assets/171907883/ae7935ed-bac5-487c-ac80-536af43f908e" alt="Main Dashboard with graphs" width="200" height="400"></td>
