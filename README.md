@@ -46,7 +46,7 @@ The Downtime App helps technicians easily report production issues. It provides 
       <td align="center"><b>Search Filter in Action</b></td>
     </tr>
     <tr>
-      <td align="center"><img src="https://github.com/aevilnike/Down-Time-Record-Apps/assets/171907883/313d8ca7-e61e-47ff-9646-9cfcc9e106ef" alt="Admin Notification Screen" width="200" height="400"></td>
+      <td align="center"><img src="https://github.com/aevilnike/Down-Time-Record-Apps/assets/171907883/c02df265-c1f5-4756-892e-30fed960ed30" alt="Admin Notification Screen" width="200" height="400"></td>
       <td align="center"><img src="https://github.com/aevilnike/Down-Time-Record-Apps/assets/171907883/222465ed-6895-4a77-a10a-6bb442fd5b97" alt="Data Export to Excel" width="200" height="400"></td>
       <td align="center"><img src="https://github.com/aevilnike/Down-Time-Record-Apps/assets/171907883/15cfd0f2-2503-4d72-a66b-05209c90309f" alt="Search Filter in Action" width="200" height="400"></td>
     </tr>
