@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "44889818037",
+    "firebase_url": "https://drpfam-f23c5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "drpfam-f23c5",
+    "storage_bucket": "drpfam-f23c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44889818037:android:d501d5da533a61f4ad8ffc",
+        "android_client_info": {
+          "package_name": "com.example.drapps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCp2LtbcTG4Jbk6Mof5irfeltJsuz11Gw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".user.EmployeeActivity"
+    android:padding="20dp">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_arrow_back"
+            android:layout_margin="5dp"
+            android:paddingRight="5dp"
+            android:background="@null"/>-->
+
+        <TextView
+            android:id="@+id/formTitle"
+            android:text="DAILY DOWNTIME RECORD PRODUCTION ENGINEERING"
+            android:textSize="18sp"
+            android:paddingLeft="25dp"
+            android:layout_gravity="center"
+            android:textColor="@color/color_primary"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"/>
+
+    <!-- Scrolls Other Views ... -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:text="Username"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textColor="@color/color_primary"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/NoPekerjaTv"
+                android:text="Employee Number"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textColor="@color/color_primary"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Line/Sub*"
+                android:id="@+id/linesubEt"
+                android:background="@android:color/white"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Team Member*"
+                android:id="@+id/teamEt"
+                android:background="@android:color/white"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Action/Countermeasure*"
+                android:id="@+id/acEt"
+                android:background="@android:color/white"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:text="Equipment"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <!--2 Column-->
+            <LinearLayout
+                android:id="@+id/equipmentLl"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- CheckBox group -->
+                <CheckBox
+                    android:id="@+id/checkBoxECT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="ECT" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxSAIM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="SAIM" />
+            </LinearLayout>
+
+            <!-- checkbox_ect.xml -->
+            <LinearLayout
+                android:id="@+id/ectLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Problem ECT"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:id="@+id/pinBrokenCb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Pin Broken"/>
+                <CheckBox
+                    android:id="@+id/lwbCb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Lead Wire Broken / Cut off"/>
+                <CheckBox
+                    android:id="@+id/clCb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Checker Loose"/>
+                <CheckBox
+                    android:id="@+id/ofiCb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="OMI-10 / FHC-800 Issue"/>
+                <CheckBox
+                    android:id="@+id/dmCb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Data Missing"/>
+                <CheckBox
+                    android:id="@+id/chbCb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Checker Handle Broken"/>
+                <!-- Add other checkboxes for ECT problems here -->
+
+                <EditText
+                    android:id="@+id/ectOtherEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Other ECT Problem"/>
+
+            </LinearLayout>
+
+            <!-- checkbox_saim.xml -->
+            <LinearLayout
+                android:id="@+id/saimLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Problem SAIM"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:id="@+id/dataCorruptCb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Data Corrupt"/>
+
+                <CheckBox
+                    android:id="@+id/cpuSCb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="CPU can't ON"/>
+
+                <CheckBox
+                    android:id="@+id/rampCb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="RAM Problem"/>
+                <CheckBox
+                    android:id="@+id/psbCb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Power Supply broken"/>
+                <CheckBox
+                    android:id="@+id/lwbSCb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Lead Wire Broken / Cut Off"/>
+                <CheckBox
+                    android:id="@+id/pbCb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Pin Broken"/>
+                <!-- Add other checkboxes for SAIM problems here -->
+
+                <EditText
+                    android:id="@+id/saimOtherEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Other SAIM Problem"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/startTimeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Start Time">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/startTimeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_time_picker"
+                    android:drawablePadding="8dp"
+                    android:inputType="none"
+                    android:onClick="showStartTimePicker" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/finishTimeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Finish Time">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/finishTimeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_time_picker"
+                    android:drawablePadding="8dp"
+                    android:inputType="none"
+                    android:onClick="showFinishTimePicker" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Date">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dateEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_date_picker"
+                    android:drawablePadding="8dp"
+                    android:inputType="none"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Evidences"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageEvidence"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    app:c_border="true"
+                    app:c_border_width="1dp"
+                    app:c_border_color="@color/color_primary"
+                    app:srcCompat="@drawable/baseline_image_24" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:backgroundTint="@color/color_primary"
+                android:textColor="#fff"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="25dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="Logout"
+        android:textColor="@color/color_primary"/>
+
+
+</LinearLayout>

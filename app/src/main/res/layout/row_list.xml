@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:layout_toStartOf="@+id/nextIv">
+
+            <TextView
+                android:id="@+id/noPkTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:text="No. Pekerja"
+                android:textSize="18sp"
+                android:textColor="@color/color_primary"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:text="Name"
+                android:textSize="18sp"
+                android:textColor="@color/color_primary"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/dateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Date"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/btnLl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateTv"
+                android:layout_marginVertical="10dp"
+                android:layout_alignParentEnd="true">
+
+                <TextView
+                    android:id="@+id/fixBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Noted"
+                    android:background="@drawable/shape_rectgreen"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/delBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:background="@drawable/shape_rectreject"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginStart="10dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/nextIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_forward"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
