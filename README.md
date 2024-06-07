@@ -1,7 +1,3 @@
-Here's the updated version with the specified image sizes and titles for each screenshot, arranged in three columns per row:
-
----
-
 <div align="center">
   <h2>Downtime Record App</h2>
 </div>
